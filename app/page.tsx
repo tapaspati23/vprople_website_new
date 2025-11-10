@@ -1,10 +1,17 @@
-import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/hero-section";
+import Footer from "@/components/footer";
+import Features from "@/components/features-4";
+import StatsSection from "@/components/stats";
+import FAQsTwo from "@/components/faqs-2";
 
 export default function Home() {
   return (
-    <div className="h-screen flex items-center justify-center flex-col gap-2">
-      <h1 className="text-2xl font-bold">Hello VProPle!</h1>
-      <Button>get started</Button>
-    </div>
+    <>
+      <HeroSection />
+      <StatsSection />
+      <FAQsTwo />
+      <Features />
+      <Footer />
+    </>
   );
 }
