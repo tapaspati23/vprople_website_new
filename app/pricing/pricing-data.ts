@@ -1,0 +1,181 @@
+export type PricingFeature = {
+  name: string
+  description?: string
+  category?: string
+}
+
+export type PricingPlan = {
+  name: string
+  tagline: string
+  description: string
+  isPopular?: boolean
+  features: string[] // names of included features
+}
+
+export const pricingFeatures: PricingFeature[] = [
+  { name: "Contact Us", category: "Support" },
+  { name: "24/7 Support", category: "Support" },
+  { name: "Unlimited User Accounts", category: "Users" },
+  { name: "Vendor User Provision", category: "Users" },
+  { name: "Calibration Call", category: "Setup" },
+  { name: "Quick CV Upload", category: "CV Management" },
+  { name: "Pre-Screening Questions", category: "Screening" },
+  { name: "CV Pre Screening Tool", category: "Screening" },
+  { name: "AI Scheduler", category: "Automation" },
+  { name: "SPOC for Interviews", category: "Support" },
+  { name: "AI-Generated Feedback", category: "AI Features" },
+  { name: "24 TAT with Track", category: "Process" },
+  { name: "Candidate Analytics", category: "Analytics" },
+  { name: "White Board", category: "Interview Tools" },
+  { name: "Coding Platform", category: "Interview Tools" },
+  { name: "Hawk Eye", category: "Monitoring" },
+  { name: "Proctoring", category: "Monitoring" },
+  { name: "Quality Check", category: "Quality" },
+  { name: "ATS Integration", category: "Integration" },
+  { name: "Leaderboard", category: "Analytics" },
+  { name: "Interview Statistics", category: "Analytics" },
+  { name: "ZeroReschedule Charge", category: "Process" },
+  { name: "Customizable Questions", category: "Customization" },
+  { name: "Load AI JD", category: "AI Features" },
+  { name: "Status Tracker", category: "Process" },
+  { name: "Business WhatsApp", category: "Communication" },
+  { name: "Interview Bites", category: "Features" },
+  { name: "Global Search", category: "Search" },
+  { name: "Record the Interview", category: "Recording" },
+  { name: "Duplicate Check", category: "Quality" },
+  { name: "Auto Parsing", category: "Automation" },
+  { name: "Data Privacy", category: "Security" },
+  { name: "Branding", category: "Customization" },
+  { name: "Users Role Matrix", category: "Users" },
+  { name: "Start or Close Positions", category: "Process" },
+  { name: "Candidate Conversations", category: "Communication" },
+  { name: "Notifications", category: "Communication" },
+  { name: "Success Factor", category: "Analytics" },
+  { name: "Choose the Panel", category: "Process" },
+  { name: "Quick Reassign", category: "Process" },
+  { name: "Communicate Swiftly", category: "Communication" },
+  { name: "Analytics", category: "Analytics" },
+  { name: "Questions Bank", category: "Content" },
+  { name: "AI-Generated Questions", category: "AI Features" },
+  { name: "Applicant-Trac System", category: "Integration" },
+  { name: "Customize Rubric", category: "Customization" },
+  { name: "Review", category: "Quality" }
+]
+
+export const pricingPlans: PricingPlan[] = [
+  {
+    name: "Standard",
+    tagline: "Contact Us",
+    description: "Essential features for small teams and startups",
+    features: [
+      "Contact Us",
+      "24/7 Support",
+      "Unlimited User Accounts",
+      "Quick CV Upload",
+      "Pre-Screening Questions",
+      "AI Scheduler",
+      "24 TAT with Track",
+      "White Board",
+      "Coding Platform",
+      "Status Tracker",
+      "Global Search",
+      "Data Privacy",
+      "Users Role Matrix",
+      "Notifications",
+      "Analytics"
+    ]
+  },
+  {
+    name: "Hassle-Free",
+    tagline: "Contact Us",
+    description: "Advanced features for growing organizations",
+    isPopular: true,
+    features: [
+      "Contact Us",
+      "24/7 Support",
+      "Unlimited User Accounts",
+      "Vendor User Provision",
+      "Quick CV Upload",
+      "Pre-Screening Questions",
+      "CV Pre Screening Tool",
+      "AI Scheduler",
+      "AI-Generated Feedback",
+      "24 TAT with Track",
+      "Candidate Analytics",
+      "White Board",
+      "Coding Platform",
+      "Hawk Eye",
+      "Quality Check",
+      "Interview Statistics",
+      "Load AI JD",
+      "Status Tracker",
+      "Business WhatsApp",
+      "Global Search",
+      "Record the Interview",
+      "Data Privacy",
+      "Branding",
+      "Users Role Matrix",
+      "Start or Close Positions",
+      "Notifications",
+      "Analytics",
+      "Questions Bank",
+      "Customize Rubric"
+    ]
+  },
+  {
+    name: "Premium",
+    tagline: "Contact Us",
+    description: "Complete solution for medium to large businesses",
+    features: [
+      "Contact Us",
+      "24/7 Support",
+      "Unlimited User Accounts",
+      "Vendor User Provision",
+      "Calibration Call",
+      "Quick CV Upload",
+      "Pre-Screening Questions",
+      "CV Pre Screening Tool",
+      "AI Scheduler",
+      "SPOC for Interviews",
+      "AI-Generated Feedback",
+      "24 TAT with Track",
+      "Candidate Analytics",
+      "White Board",
+      "Coding Platform",
+      "Hawk Eye",
+      "Proctoring",
+      "Quality Check",
+      "ATS Integration",
+      "Leaderboard",
+      "Interview Statistics",
+      "ZeroReschedule Charge",
+      "Load AI JD",
+      "Status Tracker",
+      "Business WhatsApp",
+      "Interview Bites",
+      "Global Search",
+      "Record the Interview",
+      "Duplicate Check",
+      "Auto Parsing",
+      "Data Privacy",
+      "Branding",
+      "Users Role Matrix",
+      "Start or Close Positions",
+      "Candidate Conversations",
+      "Notifications",
+      "Success Factor",
+      "Choose the Panel",
+      "Quick Reassign",
+      "Analytics",
+      "Questions Bank",
+      "AI-Generated Questions",
+      "Customize Rubric"
+    ]
+  },
+  {
+    name: "Elite",
+    tagline: "Contact Us",
+    description: "Enterprise-grade features with full customization",
+    features: pricingFeatures.map(f => f.name) // All features included
+  }
+]
